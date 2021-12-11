@@ -1,0 +1,35 @@
+# Configuring Git
+-----------------
+
+## Settings to be configured:
+1. Name
+2. Email
+3. Default Editor
+4. Line Ending
+
+## Levels of settings configuration:
+1. System - All Users
+2. Global - All repositories of the current user
+3. Local - The current repository
+
+## How to configure name and email?
+git config --global user.name "Ankur Atri"
+git config --global user.email "ankuratri.in@gmail.com"
+
+## How to configure default editor?
+git config --global core.editor "code --wait"
+
+## Open default editor to edit all the git global settings:
+git config --global -e
+
+## How to configure end of line to auto? 
+Needed because developers work on different OS.
+
+On Windows end of line is \r\n - Carriage Return and Line Feed
+git config --global core.autocrlf true
+
+On Mac/Linux end of line is \n - Line Feed
+git config --global core.autocrlf input
+
+
+
